@@ -72,7 +72,7 @@ def process(query):
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("home.html")
 
 @app.route("/login")
 def login():
@@ -84,6 +84,11 @@ def login():
 @app.route("/about")
 def about():
     return render_template("about.html")
+
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
 
 
 

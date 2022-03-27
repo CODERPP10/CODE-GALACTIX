@@ -14,14 +14,14 @@
 
     <aside class="sidenav">
         <div class="logo">
-            <a href="{{index.html}}"><img src=" {{url_for( 'static',filename='LOGO')}}" alt="LOGO HERE"></a>
+            <a href="/home"><img src=" {{url_for( 'static',filename='LOGO.png')}}" alt="LOGO HERE"></a>
         </div>
         <div class="menulink">
-            <a href="{{index.html}}"><i class="fas fa-home"></i><span>Home</span></a>
-            <a href="/search"><i class="fas fa-search"></i> <span>Search</span> </a>
+            <a href="/home"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/index"><i class="fas fa-search"></i> <span>Search</span> </a>
         </div>
         <div class="buttons">
-            <a href="{{'/login'}}"><button type="button" class="btn btn-light">Log In</button></a>
+            <a href="/login"><button type="button" class="btn btn-light">Log In</button></a>
         </div>
         <!-- <div class="buttons">
             <a href="/App/templates/index.html"><button type="button" class="btn btn-light">Log Out</button></a>
