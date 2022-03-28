@@ -51,9 +51,9 @@ df_index.to_csv("data/index.csv", index=False)
 def process(query):
     que = query 
     kataDepan = set(stopwords.words('english'))
-    datasets = pd.read_csv("data/datasets.csv")
+    datasets = pd.read_csv("App/data/datasets.csv")
     dokumen = datasets.values.tolist()
-    index = pd.read_csv("data/index.csv")
+    index = pd.read_csv("App/data/index.csv")
     index = index.values.tolist()
     stemmer = PorterStemmer()
     result = [[] for i in range(len(dokumen))]      
@@ -179,4 +179,8 @@ if __name__ == "__main__":
 
 
 
+
+
+
+	
 
